@@ -98,4 +98,7 @@
   <bean id="car0502" class="com.atguigu.springlearn.bean.Book" factory-bean="bookInstanceFactory" factory-method="getBook">
     <constructor-arg value="神雕侠侣"></constructor-arg>
   </bean>
+
+  <!--实现Spring的FactoryBean进行工厂创建目标对象-->
+  <bean id="BookFactoryBySpring" class="com.atguigu.springlearn.factory.BookFactoryBySpring"></bean>
 </beans>

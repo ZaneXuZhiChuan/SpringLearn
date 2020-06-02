@@ -1,5 +1,6 @@
 package com.atguigu.springlearn;
 
+import com.atguigu.springlearn.bean.Book;
 import com.atguigu.springlearn.bean.Car;
 import com.atguigu.springlearn.bean.Person;
 import org.junit.jupiter.api.Test;
@@ -145,5 +146,14 @@ class SpringlearnApplicationTests {
 	@Test
 	void test0502(){
 		getBeanAndPrint("car0502");
+	}
+
+//	实现Spring的FactoryBean进行工厂创建目标对象
+	@Test
+	void BookFactoryBySpringTest() {
+//		getBeanAndPrint("BookFactoryBySpring");
+		Book bookFactoryBySpring1 = (Book) applicationContext.getBean("BookFactoryBySpring");
+		Object bookFactoryBySpring2 = applicationContext.getBean("BookFactoryBySpring");
+		System.out.println(":"+bookFactoryBySpring1);
 	}
 }
