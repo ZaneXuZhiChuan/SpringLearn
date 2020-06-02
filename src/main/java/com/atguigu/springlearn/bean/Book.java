@@ -5,7 +5,16 @@ public class Book {
 	private String author;
 	private String bookName;
 
+	public void bookInit(){
+		System.out.println("book init....");
+	}
+
+	public void bookDestroy(){
+		System.out.println("book destroy...");
+	}
+
 	public Book(String author, String bookName) {
+		System.out.println("book construct...");
 		this.author = author;
 		this.bookName = bookName;
 	}

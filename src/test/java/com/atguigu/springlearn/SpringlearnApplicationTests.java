@@ -3,10 +3,13 @@ package com.atguigu.springlearn;
 import com.atguigu.springlearn.bean.Book;
 import com.atguigu.springlearn.bean.Car;
 import com.atguigu.springlearn.bean.Person;
+import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import javax.sql.DataSource;
 
 /**
  * 实验1：通过IOC容器创建对象，并为属性赋值★
@@ -156,4 +159,39 @@ class SpringlearnApplicationTests {
 		Object bookFactoryBySpring2 = applicationContext.getBean("BookFactoryBySpring");
 		System.out.println(":"+bookFactoryBySpring1);
 	}
+
+	/**
+	 * TODO 实验10：创建带有生命周期方法的bean
+	 * TODO 实验11：测试bean的后置处理器
+	 * 没有测试出来预期结果
+	 */
+	@Test
+	void test1001(){
+		Book book1001 = (Book) applicationContext.getBean("book1001");
+	}
+
+	/**
+	 * 实验12：引用外部属性文件★
+	 */
+	@Test
+	void comboPooledDataSourceTest(){
+//		DataSource comboPooledDataSource = (DataSource) applicationContext.getBean("comboPooledDataSource");
+		DataSource dataSource = applicationContext.getBean(DataSource.class);
+		System.out.println(dataSource);
+	}
+
+	/**
+	 * 实验14：[SpEL测试I]
+	 在SpEL中使用字面量、
+	 引用其他bean、
+	 引用其他bean的某个属性值、
+	 调用非静态方法
+	 调用静态方法、
+	 使用运算符
+	 */
+	@Test
+	void test1401(){
+		getBeanAndPrint("person1401");
+	}
+
 }

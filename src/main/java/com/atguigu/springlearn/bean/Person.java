@@ -9,6 +9,7 @@ public class Person {
 	private String age;
 	private String gender;
 	private String email;
+	private Double salary;
 
 	private Car car;
 	private List<Book> bookList;
@@ -31,6 +32,18 @@ public class Person {
 		this.properties = properties;
 	}
 
+	public Person(String lastName, String age, String gender, String email, Double salary, Car car, List<Book> bookList, Map<String, Object> maps, Properties properties) {
+		this.lastName = lastName;
+		this.age = age;
+		this.gender = gender;
+		this.email = email;
+		this.salary = salary;
+		this.car = car;
+		this.bookList = bookList;
+		this.maps = maps;
+		this.properties = properties;
+	}
+
 	@Override
 	public String toString() {
 		return "Person{" +
@@ -38,6 +51,7 @@ public class Person {
 				", age='" + age + '\'' +
 				", gender='" + gender + '\'' +
 				", email='" + email + '\'' +
+				", salary=" + salary +
 				", car=" + car +
 				", bookList=" + bookList +
 				", maps=" + maps +
@@ -131,6 +145,14 @@ public class Person {
 		this.email = email;
 	}
 
+	public Double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
+
 	public static class PersonBuilder {
 		private String lastName;
 		private String age;
@@ -140,7 +162,12 @@ public class Person {
 		private List<Book> bookList;
 		private Map<String, Object> maps;
 		private Properties properties;
+		private Double salary;
 
+		public PersonBuilder salary(Double salary) {
+			this.salary = salary;
+			return this;
+		}
 		public PersonBuilder car(Car car) {
 			this.car = car;
 			return this;
