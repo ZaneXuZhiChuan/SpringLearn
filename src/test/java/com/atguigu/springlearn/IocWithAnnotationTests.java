@@ -2,6 +2,8 @@ package com.atguigu.springlearn;
 
 import com.atguigu.springlearn.bean.Book2;
 import com.atguigu.springlearn.controller.Book2Controller;
+import com.atguigu.springlearn.service.Book2Service;
+import com.atguigu.springlearn.service.Book2ServiceExt;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
@@ -29,10 +31,17 @@ class IocWithAnnotationTests {
 	 * 实验18：使用@Autowired注解实现根据类型实现自动装配★
 	 */
 	@Test
-	void AutowiredTest(){
+	void AutowiredBeanTest(){
 		applicationContext.getBean(Book2Controller.class).doGet();
 	}
 
-
+	/**
+	 * 实验21：
+	 * 在方法的形参位置使用@Qualifier注解
+	 */
+	@Test
+	void AutowiredMethodTest(){
+//		applicationContext.getBean(Book2Controller.class);
+	}
 
 }

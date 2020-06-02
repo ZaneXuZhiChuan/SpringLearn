@@ -1,5 +1,6 @@
 package com.atguigu.springlearn.controller;
 
+import com.atguigu.springlearn.dao.Book2Dao;
 import com.atguigu.springlearn.service.Book2Service;
 import com.atguigu.springlearn.service.Book2ServiceExt;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,5 +39,17 @@ public class Book2Controller {
 
 	public void doGet(){
 		book2ServiceExt.saveBook2();
+	}
+
+	/**
+	 * 实验21：
+	 * 在方法的形参位置使用@Qualifier注解
+	 * 那么该方法中所有参数都会按照spring自动注入的规则注入进来，
+	 * 注意：加了@Autowired的方法会在当前类被创建的时候自动运行！！！！！也就是说加了@Autowired的方法不需要我们手动调用
+	 */
+	@Autowired
+	public void doSomething(@Qualifier("book2ServiceExt2e") Book2Service book2ServiceExt, Book2Dao book2Dao){
+		book2ServiceExt.saveBook2();
+		System.out.printf("--------------"+book2Dao);
 	}
 }
