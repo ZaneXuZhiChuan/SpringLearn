@@ -52,23 +52,6 @@ import javax.sql.DataSource;
  * 调用非静态方法
  * 调用静态方法、
  * 使用运算符
- * <p>
- * <p>
- * <p>
- * 实验15：通过注解分别创建Dao、Service、Controller★
- * 实验16：使用context:include-filter指定扫描包时要包含的类
- * 实验17：使用context:exclude-filter指定扫描包时不包含的类
- * <p>
- * <p>
- * 实验18：使用@Autowired注解实现根据类型实现自动装配★
- * 实验19：如果资源类型的bean不止一个，
- * 默认根据@Autowired注解标记的成员变量名作为id查找bean，进行装配★
- * 实验20：如果根据成员变量名作为id还是找不到bean，
- * 可以使用@Qualifier注解明确指定目标bean的id★
- * 实验21：在方法的形参位置使用@Qualifier注解
- * 实验22：@Autowired注解的required属性指定某个属性允许不被设置
- * <p>
- * 实验23：测试泛型依赖注入★
  */
 
 @SpringBootTest

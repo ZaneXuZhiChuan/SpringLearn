@@ -139,6 +139,4 @@
     <property name="email" value="#{person0301.getEmail()}"></property>
   </bean>
 
-  <!--实验15：通过注解分别创建Dao、Service、Controller★
-  通过给bean上添加某些注解实现将bean加入到ioc容器中-->
 </beans>
