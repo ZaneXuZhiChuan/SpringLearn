@@ -5,6 +5,7 @@ import com.atguigu.springlearn.controller.Book2Controller;
 import com.atguigu.springlearn.service.Book2Service;
 import com.atguigu.springlearn.service.Book2ServiceExt;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -36,12 +37,17 @@ class IocWithAnnotationTests {
 	}
 
 	/**
-	 * 实验21：
-	 * 在方法的形参位置使用@Qualifier注解
+	 * spring的单元测试会自动帮我们去扫描项目并将加了注解的类加入到spring容器中进行管理，
+	 * 也就是说使用spring的单元测试我们其实不再需要通过ioc.getBean()去获取组件，而可以直接通过@Autowired的方式去获取组件！！！！！
+	 * 基于spring单元测试这种特性，我们这个测试方法虽然什么都没做，但其实spring会自动帮我们创建Book2Controller对象，
+	 * 而又因为再Book2Controller类型中我们对doSomething()方法进行了@Autowired的修饰，所以在创建好Book2Controller对象的时候，doSomething()也会自动执行！！！！！
 	 */
+	@Autowired
+	Book2Controller book2Controller;
 	@Test
-	void AutowiredMethodTest(){
-//		applicationContext.getBean(Book2Controller.class);
-	}
+	void AutowiredMethodTest(){}
 
+	/**
+	 * 实验23：测试泛型依赖注入★
+	 */
 }
