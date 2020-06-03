@@ -1,9 +1,7 @@
 package com.atguigu.springlearn;
 
-import com.atguigu.springlearn.bean.Book2;
-import com.atguigu.springlearn.controller.Book2Controller;
-import com.atguigu.springlearn.service.Book2Service;
-import com.atguigu.springlearn.service.Book2ServiceExt;
+import com.atguigu.springlearn.ioc.bean.Book2;
+import com.atguigu.springlearn.ioc.controller.Book2Controller;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

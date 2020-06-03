@@ -1,6 +1,6 @@
-package com.atguigu.springlearn.factory;
+package com.atguigu.springlearn.ioc.factory;
 
-import com.atguigu.springlearn.bean.Book;
+import com.atguigu.springlearn.ioc.bean.Book;
 /*
 实例工厂：需要通过创建该工程实例才能创建对象
  */

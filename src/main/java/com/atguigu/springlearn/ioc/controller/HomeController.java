@@ -1,4 +1,4 @@
-package com.atguigu.springlearn.controller;
+package com.atguigu.springlearn.ioc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,9 +1,8 @@
 package com.atguigu.springlearn;
 
-import com.atguigu.springlearn.bean.Book;
-import com.atguigu.springlearn.bean.Car;
-import com.atguigu.springlearn.bean.Person;
-import com.mchange.v2.c3p0.ComboPooledDataSource;
+import com.atguigu.springlearn.ioc.bean.Book;
+import com.atguigu.springlearn.ioc.bean.Car;
+import com.atguigu.springlearn.ioc.bean.Person;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;

@@ -1,4 +1,4 @@
-package com.atguigu.springlearn.bean;
+package com.atguigu.springlearn.ioc.bean;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

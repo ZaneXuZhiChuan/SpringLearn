@@ -1,4 +1,4 @@
-package com.atguigu.springlearn.bean;
+package com.atguigu.springlearn.ioc.bean;
 
 public class Car {
 	private String carName;

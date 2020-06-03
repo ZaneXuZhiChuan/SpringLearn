@@ -1,6 +1,6 @@
-package com.atguigu.springlearn.factory;
+package com.atguigu.springlearn.ioc.factory;
 
-import com.atguigu.springlearn.bean.Book;
+import com.atguigu.springlearn.ioc.bean.Book;
 import org.springframework.beans.factory.FactoryBean;
 
 public class BookFactoryBySpring implements FactoryBean<Book> {

@@ -1,8 +1,7 @@
-package com.atguigu.springlearn.controller;
+package com.atguigu.springlearn.ioc.controller;
 
-import com.atguigu.springlearn.dao.Book2Dao;
-import com.atguigu.springlearn.service.Book2Service;
-import com.atguigu.springlearn.service.Book2ServiceExt;
+import com.atguigu.springlearn.ioc.dao.Book2Dao;
+import com.atguigu.springlearn.ioc.service.Book2Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

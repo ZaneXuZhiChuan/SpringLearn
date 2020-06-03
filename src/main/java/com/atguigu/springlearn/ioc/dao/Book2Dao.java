@@ -1,6 +1,6 @@
-package com.atguigu.springlearn.dao;
+package com.atguigu.springlearn.ioc.dao;
 
-import com.atguigu.springlearn.bean.Book2;
+import com.atguigu.springlearn.ioc.bean.Book2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

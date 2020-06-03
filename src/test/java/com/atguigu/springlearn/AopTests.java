@@ -1,8 +1,8 @@
 package com.atguigu.springlearn;
 
-import com.atguigu.springlearn.dao.CalculatorDao;
-import com.atguigu.springlearn.proxy.CalculatorProxy;
-import com.atguigu.springlearn.service.CalculatorService;
+import com.atguigu.springlearn.aop.dao.CalculatorDao;
+import com.atguigu.springlearn.aop.proxy.CalculatorProxy;
+import com.atguigu.springlearn.aop.service.CalculatorService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

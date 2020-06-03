@@ -1,6 +1,7 @@
-package com.atguigu.springlearn.factory;
+package com.atguigu.springlearn.ioc.factory;
 
-import com.atguigu.springlearn.bean.Book;
+import com.atguigu.springlearn.ioc.bean.Book;
+
 /*
 静态工厂：通过静态方法直接创建对象
  */

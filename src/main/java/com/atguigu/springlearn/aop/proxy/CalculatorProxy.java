@@ -1,7 +1,7 @@
-package com.atguigu.springlearn.proxy;
+package com.atguigu.springlearn.aop.proxy;
 
-import com.atguigu.springlearn.dao.CalculatorDao;
-import com.atguigu.springlearn.utils.LogUtils;
+import com.atguigu.springlearn.aop.dao.CalculatorDao;
+import com.atguigu.springlearn.aop.utils.LogUtils;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.InvocationHandler;

@@ -29,7 +29,7 @@
   使用context:include-filter指定只扫描哪些类，
   默认是全部扫描进来,所以需要加上use-default-filters="false"配置先禁用掉默认加载规则配置才能生效-->
   <!--<context:component-scan base-package="com.atguigu.springlearn" use-default-filters="false">-->
-    <!--<context:include-filter type="assignable" expression="com.atguigu.springlearn.controller.Book2Controller"></context:include-filter>-->
+    <!--<context:include-filter type="assignable" expression="Book2Controller"></context:include-filter>-->
   <!--</context:component-scan>-->
 
   <!--实验17：TODO 没成功
@@ -39,7 +39,7 @@
   另外三种大多数情况不会使用
   -->
   <!--<context:component-scan base-package="com.atguigu.springlearn">-->
-    <!--<context:exclude-filter type="assignable" expression="com.atguigu.springlearn.controller.Book2Controller"></context:exclude-filter>-->
+    <!--<context:exclude-filter type="assignable" expression="Book2Controller"></context:exclude-filter>-->
   <!--</context:component-scan>-->
 
   <!--实验18：===========================================================================================================

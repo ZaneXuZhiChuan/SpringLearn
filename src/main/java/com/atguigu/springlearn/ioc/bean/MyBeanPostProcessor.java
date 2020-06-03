@@ -1,4 +1,4 @@
-package com.atguigu.springlearn.bean;
+package com.atguigu.springlearn.ioc.bean;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

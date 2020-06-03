@@ -1,4 +1,4 @@
-package com.atguigu.springlearn.dao;
+package com.atguigu.springlearn.aop.dao;
 
 public interface CalculatorDao {
 	int add(int i, int j);
