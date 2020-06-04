@@ -19,14 +19,14 @@ public class CalculatorProxy<T> {
 			public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 				Object result = null;
 				try {
-					LogUtils.logStart(method,args);
+//					LogUtils.logStart(method,args);TODO
 //				result:目标方法执行完后的返回值；
 					result = method.invoke(calculatorDao, args);
 //				返回值必须返回出去外界才能拿到执行后的结果；
 				}catch (Exception e){
-					LogUtils.logException(e,method );
+//					LogUtils.logException(e,method );TODO
 				}finally {
-					LogUtils.logResult(result);
+//					LogUtils.logResult(result);TODO
 					return result;
 				}
 
@@ -47,14 +47,14 @@ public class CalculatorProxy<T> {
 			public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 				Object result = null;
 				try {
-					LogUtils.logStart(method,args);
+//					LogUtils.logStart(method,args);TODO
 //				result:目标方法执行完后的返回值；
 					result = method.invoke(t, args);
 //				返回值必须返回出去外界才能拿到执行后的结果；
 				}catch (Exception e){
-					LogUtils.logException(e,method );
+//					LogUtils.logException(e,method );TODO
 				}finally {
-					LogUtils.logResult(result);
+//					LogUtils.logResult(result);TODO
 					return result;
 				}
 
